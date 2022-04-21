@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="fontawesome-free-5.13.0-web/css/all.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css" integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o=" crossorigin="anonymous" />
+   <link rel="stylesheet" 
+        href=
+"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+  
+  <title>HOM|Bollywood-Melodies</title>
+</head>
+<body>
+  <nav>
+    <div class="logo"><h1>Hub Of Melodies</h1></div>
+    <div class="openMenu"><i class="fa fa-bars"></i></div>
+    <ul class="mainMenu">
+      <li><a href="HOM.html">Home</a></li>
+        <li><a href="#">Product</a></li>
+          <li><a href="#">Contact</a></li>
+            <li><a href="#">About</a></li>
+              <div class="dropdown">
+  <button class="dropbtn">Playlist</button>
+  <div class="dropdown-content">
+    <a href="wedding.html">Wedding Songs</a>
+    <a href="bhangra.html">Bhangra</a>
+    <a href="punjabi spirit.html">Punjabi Spirit</a>
+    <a href="Trendy Hindi Pop.html">Trendy Hindi Pop</a>
+    <a href="heart.html">Romantic Melodies</a>
+    <a href="drive.html">Drive</a>
+    <a href="sad.html">Sad Songs</a>
+    <a href="bollywood.html">Bollywood Hits</a>
+    <a href="workout.html">Workout Songs</a>
+    <a href="haryanvi.html">Haryanvi</a>
+    <a href="sufi.html">Sufi Melodies</a>
+    <a href="90's.html">90's Evergreen</a>
+    <a href="cafe.html">Cafe Melodies</a>
+  </div>
+</div>
+            <div class="closeMenu"><i class="fa fa-bars"></i></div>
+            <span class="icons">
+              <i class="fab fa-facebook"></i>
+              <i class="fab fa-instagram"></i>
+              <i class="fab fa-twitter"></i>
+              <i class="fab fa-github"></i>
+            </span>
+    </ul>
+
+  </nav>
+  <div class="container">
+         <div class="slide">
+            <img src="https://images.unsplash.com/photo-1609517904792-bac493d55556?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=200&ixlib=rb-1.2.1&q=80&w=700" />
+         </div>
+         <div class="slide">
+            <img src="https://images.unsplash.com/photo-1609883475382-c4c9378569e5?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=200&ixlib=rb-1.2.1&q=80&w=700" />
+         </div>
+         <div class="slide">
+            <img src="https://images.unsplash.com/photo-1610258648552-fe6407d664a1?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=200&ixlib=rb-1.2.1&q=80&w=700" />
+         </div>
+         <div class="slide">
+            <img src="https://images.unsplash.com/photo-1610258648552-fe6407d664a1?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=200&ixlib=rb-1.2.1&q=80&w=700" />
+         </div>
+         <div class="slide">
+            <img src="https://images.unsplash.com/photo-1611094607507-8c8173e5cf33?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=200&ixlib=rb-1.2.1&q=80&w=700" />
+         </div>
+         <a class="prevbtn" onclick="changeSlide(-1)">❮</a>
+         <a class="nextbtn" onclick="changeSlide(1)">❯</a>
+      </div>
+      <h1>Bollywood-Melodies</h1>
+       <div class="player">
+  
+    <!-- Define the section for displaying details -->
+    <div class="details">
+      <div class="now-playing">PLAYING x OF y</div>
+      <div class="track-art"></div>
+      <div class="track-name">Track Name</div>
+      <div class="track-artist">Track Artist</div>
+    </div>
+  
+    <!-- Define the section for displaying track buttons -->
+    <div class="buttons">
+      <div class="prev-track" onclick="prevTrack()">
+        <i class="fa fa-step-backward fa-2x"></i>
+      </div>
+      <div class="playpause-track" onclick="playpauseTrack()">
+        <i class="fa fa-play-circle fa-5x"></i>
+      </div>
+      <div class="next-track" onclick="nextTrack()">
+        <i class="fa fa-step-forward fa-2x"></i>
+      </div>
+    </div>
+  
+    <!-- Define the section for displaying the seek slider-->
+    <div class="slider_container">
+      <div class="current-time">00:00</div>
+      <input type="range" min="1" max="100"
+        value="0" class="seek_slider" onchange="seekTo()">
+      <div class="total-duration">00:00</div>
+    </div>
+  
+    <!-- Define the section for displaying the volume slider-->
+    <div class="slider_container">
+      <i class="fa fa-volume-down"></i>
+      <input type="range" min="1" max="100"
+        value="99" class="volume_slider" onchange="setVolume()">
+      <i class="fa fa-volume-up"></i>
+    </div>
+  </div>
+  <div class="elfsight-app-38ecdbd2-b684-4adf-83ae-c4d7a8cf7915"></div>
+   <footer id="sticky-footer" class="flex-shrink-0 py-4 bg-dark text-white-50">
+    <div class="container text-center">
+      <small>Copyright &copy; HOM|HUB OF MELODIES</small>
+    </div>
+  </footer>
+  <script src="page8.js"></script>
+<script src="https://apps.elfsight.com/p/platform.js" defer></script>
+      <script src="script.js"></script>
+          </body>
+    </html>

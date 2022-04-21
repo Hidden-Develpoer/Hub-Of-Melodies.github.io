@@ -1,0 +1,319 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body{
+  font-family: 'Arial' , sans-serif;
+}
+h1{
+  text-align: center;
+}
+nav {
+  background: #000;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+}
+nav .mainMenu{
+  display: flex;
+  list-style: none;
+}
+nav .mainMenu li a{
+  display: inline-block;
+  padding: 15px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+}
+nav .mainMenu li a:hover{
+  background: rgb(255,94,0);
+}
+nav .openMenu{
+  font-size: 2rem;
+  margin: 20px;
+  display: none;
+  cursor: pointer;
+}
+nav .mainMenu .closeMenu , .icons i{
+  font-size: 2rem;
+  display: none;
+  cursor: pointer;
+}
+.fa-facebook:hover{color: rgb(0,110,255);}
+.fa-twitter:hover{color: rgb(86,154,243);}
+.fa-instagram:hover{color: rgb(255,0,191);}
+.fa-github:hover{color: rgb(255,123,0);}
+nav .logo{
+  margin: 6px;
+  font-size: 25px;
+  cursor: pointer;
+}
+@media(max-width: 800px){
+  nav .mainMenu{
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 10;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+    transition: top 1s ease;
+    display: none;
+  }
+  nav .mainMenu .closeMenu{
+      display: block;
+      position: absolute;
+      top: 20px;
+      right: 20px;
+  }
+  nav .openMenu{
+    display: block;
+  }
+  nav .mainMenu li a:hover{
+    background: none;
+    color: rgb(255,123,0);
+    font-size: 1.6rem;
+  }
+  .icons i{
+    display: inline-block;
+    padding: 12px;
+  }
+}
+img {
+            width: 100%;
+         }
+         .container {
+            max-width: 600px;
+            position: relative;
+            margin: 6% auto;
+         }
+         .prevbtn, .nextbtn {
+            position: absolute;
+            top: 50%;
+            padding: 12px;
+            margin-top: -20px;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.2s ease-in;
+            border-radius: 50%;
+         }
+         .prevbtn:hover, .nextbtn:hover {
+            background-color: darkgrey;
+            color: rgb(0,0,0);
+         }
+         .nextbtn {
+            right: 0;
+         }
+         .playlist{
+          display: flex;
+          flex-wrap: wrap;
+          padding: 5px;
+          justify-content: space-between;
+         }
+         .playlist img{
+          width: 150px;
+          height: 150px;
+          border-radius: 50%;
+          margin-top: 50px;
+          margin-left: 50px;
+          margin-right: 50px;
+         }
+         .playlist img:hover{
+          transform: scale(1.5);
+         }
+         .center{
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+         }
+         body {
+background-color: lightgreen;
+
+/* Smoothly transition the background color */
+transition: background-color .5s;
+}
+
+/* Using flex with the column direction to
+align items in a vertical direction */
+.player {
+height: 95vh;
+display: flex;
+align-items: center;
+flex-direction: column;
+justify-content: center;
+}
+
+.details {
+display: flex;
+align-items: center;
+flex-direction: column;
+justify-content: center;
+margin-top: 25px;
+}
+
+.track-art {
+margin: 25px;
+height: 250px;
+width: 250px;
+background-image: URL(
+  "https://source.unsplash.com/Qrspubmx6kE/640x360");
+background-size: cover;
+background-position: center;
+border-radius: 15%;
+}
+
+/* Changing the font sizes to suitable ones */
+.now-playing {
+font-size: 1rem;
+}
+
+.track-name {
+font-size: 3rem;
+}
+
+.track-artist {
+font-size: 1.5rem;
+}
+
+/* Using flex with the row direction to
+align items in a horizontal direction */
+.buttons {
+display: flex;
+flex-direction: row;
+align-items: center;
+}
+
+.playpause-track,
+.prev-track,
+.next-track {
+padding: 25px;
+opacity: 0.8;
+
+/* Smoothly transition the opacity */
+transition: opacity .2s;
+}
+
+/* Change the opacity when mouse is hovered */
+.playpause-track:hover,
+.prev-track:hover,
+.next-track:hover {
+opacity: 1.0;
+}
+
+/* Define the slider width so that it scales properly */
+.slider_container {
+width: 75%;
+max-width: 400px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+/* Modify the appearance of the slider */
+.seek_slider, .volume_slider {
+-webkit-appearance: none;
+-moz-appearance: none;
+appearance: none;
+height: 5px;
+background: black;
+opacity: 0.7;
+-webkit-transition: .2s;
+transition: opacity .2s;
+}
+
+/* Modify the appearance of the slider thumb */
+.seek_slider::-webkit-slider-thumb,
+.volume_slider::-webkit-slider-thumb {
+-webkit-appearance: none;
+-moz-appearance: none;
+appearance: none;
+width: 15px;
+height: 15px;
+background: white;
+cursor: pointer;
+border-radius: 50%;
+}
+
+/* Change the opacity when mouse is hovered */
+.seek_slider:hover,
+.volume_slider:hover {
+opacity: 1.0;
+}
+
+.seek_slider {
+width: 60%;
+}
+
+.volume_slider {
+width: 30%;
+}
+
+.current-time,
+.total-duration {
+padding: 10px;
+}
+
+i.fa-volume-down,
+i.fa-volume-up {
+padding: 10px;
+}
+
+/* Change the mouse cursor to a pointer
+when hovered over */
+i.fa-play-circle,
+i.fa-pause-circle,
+i.fa-step-forward,
+i.fa-step-backward {
+cursor: pointer;
+}
+#sticky-footer{
+  display: flex;
+  background-color: #bb67;
+}
+/* Dropdown Button */
+.dropbtn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
